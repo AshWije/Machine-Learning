@@ -30,19 +30,19 @@ public class NeuralNetwork {
 	/* Description:	
 	 *
 	 * Input:		Training set file (trainingFile)
-	 *				Number of instances (instances)
-	 *				Number of iterations (iterations)
-	 *				Learning rate (lr)
+	 *			Number of instances (instances)
+	 *			Number of iterations (iterations)
+	 *			Learning rate (lr)
 	 *
 	 * Output:		N/A
 	 * 
 	 * Effect:		Assigns number of training instances (numTrainingInstances)
-	 * 				Assigns number of iterations (numIterations)
-	 * 				Assigns learning rate (learningRate)
-	 * 				Assigns the entire array of attribute names (attributes)
-	 * 				Initialize the array of output values (output)
-	 *				Assigns the entire matrix of training set values (trainingSet)
-	 *				Initialize the matrix of weights (weights)
+	 * 			Assigns number of iterations (numIterations)
+	 * 			Assigns learning rate (learningRate)
+	 * 			Assigns the entire array of attribute names (attributes)
+	 * 			Initialize the array of output values (output)
+	 *			Assigns the entire matrix of training set values (trainingSet)
+	 *			Initialize the matrix of weights (weights)
 	 */
 	public NeuralNetwork(String trainingFile, int instances, int iterations, double lr) throws FileNotFoundException
 	{
@@ -105,7 +105,7 @@ public class NeuralNetwork {
 	 * Output:		N/A
 	 * 
 	 * Effect:		Assigns the entire array of outputs (output)
-	 * 				Assigns the entire matrix of weights (weights)
+	 * 			Assigns the entire matrix of weights (weights)
 	 */
 	public void train()
 	{
@@ -135,7 +135,7 @@ public class NeuralNetwork {
 	/* Description: Calculates the dot product of the weights and the training set instance on a given iteration; utilized during training
 	 * 
 	 * Input:		Iteration of the weights to consider (weightIndex)
-	 * 				Current iteration (iteration)
+	 * 			Current iteration (iteration)
 	 * 
 	 * Output:		Dot product of the weights and the training set instance
 	 * 
