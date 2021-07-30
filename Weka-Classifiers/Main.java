@@ -9,7 +9,7 @@
  * 			and random forest) to all be used together to predict the class values.
  * 
  * 		This program will output:
- * 				An approximate accuracy of the predictions
+ * 			An approximate accuracy of the predictions
  * 
  */
 
@@ -291,8 +291,8 @@ public class Main {
 		
 		// write to arff
 		BufferedWriter w = new BufferedWriter(new FileWriter(arff));
-	    w.write(to);
-	    w.close();
+	    	w.write(to);
+	    	w.close();
 		System.out.println("Made arff: " + arff);
 	}
 }
