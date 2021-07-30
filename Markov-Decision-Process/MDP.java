@@ -32,20 +32,20 @@ public class MDP {
 	 * Description:	Constructor that creates the MDP object
 	 *
 	 * Input:		Number of states (states)
-	 * 				Maximum number of actions (maxActions)
-	 * 				Number of iterations (iterations)
+	 * 			Maximum number of actions (maxActions)
+	 * 			Number of iterations (iterations)
 	 *
 	 * Output:		N/A
 	 * 
 	 * Effect:		Assigns the number of states (numStates)
-	 *				Assigns the number of actions (numActions)
-	 *				Assigns the number of iterations (numIterations)
-	 *				Assigns the entire array of state names (stateNames)
-	 *				Assigns the entire array of action names (actionNames)
-	 *				Assigns the entire array of rewards using the input file (reward)
-	 *				Assigns the entire matrix of actions using the input file (action)
-	 *				Initializes the matrix of J values (J)
-	 *				Initializes the matrix of optimal policies (op)
+	 *			Assigns the number of actions (numActions)
+	 *			Assigns the number of iterations (numIterations)
+	 *			Assigns the entire array of state names (stateNames)
+	 *			Assigns the entire array of action names (actionNames)
+	 *			Assigns the entire array of rewards using the input file (reward)
+	 *			Assigns the entire matrix of actions using the input file (action)
+	 *			Initializes the matrix of J values (J)
+	 *			Initializes the matrix of optimal policies (op)
 	 */
 	public MDP(int states, int maxActions, int iterations, String inputFile) throws FileNotFoundException
 	{
@@ -143,7 +143,7 @@ public class MDP {
 	 * Input:		The name of the action being searched for (actionName)
 	 *
 	 * Output:		The index in the state names list, if found
-	 * 				-1, if not found
+	 * 			-1, if not found
 	 * 
 	 * Effect:		N/A
 	 */
@@ -167,7 +167,7 @@ public class MDP {
 	 * Input:		The name of the state being searched for (stateName)
 	 *
 	 * Output:		The index in the action names list, if found
-	 *				-1, if not found
+	 *			-1, if not found
 	 * 
 	 * Effect:		N/A
 	 */
@@ -193,7 +193,7 @@ public class MDP {
 	 * Output:		N/A
 	 * 
 	 * Effect:		Assigns the entire matrix of J values (J)
-	 *				Assigns the entire matrix of optimal policies (op)
+	 *			Assigns the entire matrix of optimal policies (op)
 	 */
 	void valueIteration(double discountFactor)
 	{	
@@ -277,7 +277,7 @@ public class MDP {
 	 * Input:		N/A
 	 * 
 	 * Output:		J value for each state of the Markov Decision Process for the number of iterations
-	 * 				Optimal policy for each state of the Markov Decision Process for the number of iterations
+	 * 			Optimal policy for each state of the Markov Decision Process for the number of iterations
 	 * 
 	 * Effect:		N/A
 	 */
